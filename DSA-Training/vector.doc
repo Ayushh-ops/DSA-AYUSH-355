@@ -1,0 +1,86 @@
+1) Declaration/Initialization
+
+vector<data_type>vector_name;
+vector<data_type>vector_name(size,default_val);
+ex:
+vector<int>vec1;
+vector<int>vec2(5);
+vector<int>vec3(5,10);
+
+2) Direct Initialization
+
+vector<int>vec1={10,20,30,50};
+
+3) Adding Element
+
+myArr.push_back(element);
+vec1.push_back(60);
+
+4) Accessing Elements
+
+data_type element_name=vector_name()
+
+
+5) Swapping Elements
+
+swap(val1,val2);
+
+6) Adding Element/Vector at Index
+
+vec1.insert(vec1.begin()+index,val);
+
+vector<int>vec1={10,20,30,50};
+vec1.insert(vec1.begin()+2,60);
+
+vector<int>vec1={10,20,30,50};
+vector<int>vec2={100,200,300,500};
+vec1.insert(vec1.end(),vec2.begin(),vec2.end());
+
+7) Location of element
+
+int idx=find(vec.begin(),vec.end(),element)-vec.begin();  //find() returns an iterator, not an index
+//Return index if found otherwise return size of vector
+
+8) Reverse of a vector
+
+reverse(vec1.begin(),vec1.end()); ->In Place
+
+9) Sum | Max| Min of vector
+
+int sum= accumulate(vec1.begin(),vec1.end(),sum_initial);
+int max= *max_element(vec1.begin(),vec1.end());
+int min= *min_element(vec1.begin(),vec1.end());
+
+10) Sort
+sort(v.begin(),v.end());
+sort(v.begin(),v.end()),greater<int>(); ->descending
+sort(v.begin(),v.end()less<int>()); ->Ascending
+
+11) Slicing of vector
+vector<int> new_vec;
+new_vec.assign(vec1.begin()+from_idx,vec1.begin()+to_idx);
+
+vector<int> new_vec(vec1.begin()+from,vec1.begin()+to);
+
+12) Looping through vector
+for(int num:vec1){
+    cout<<num<<endl; ->Range based for-each Loop
+}
+
+2D Vector
+mat= {{12,13,14},{10,76,16},{18,47,67}}
+1) Declaration
+vector<vector<int>> mat;
+vector<vector<int>>mat(N,vector<int>(M)); -> N rows and M columns initialized with 0
+
+2) Adding a row
+mat_name.push_back(row);
+mat.push_back({1,2,3});
+
+3) Looping in a 2D Vector
+for(auto row:mat){
+    for(auto element:row){
+        cout<<element<<"";
+    }
+}
+
