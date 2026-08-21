@@ -1,0 +1,42 @@
+1) Declaration
+string str_name= "Hello";
+
+2) Length of string
+int len= str_name.length();
+int len= str_name.size();
+
+3) character access
+char my_chr= str_name[index];
+
+4) Searching
+int index= myStr1.find(myStr2,from_index);  //default index=0, returns index otherwise -1
+
+5) Check if equal
+bool ans=(myStr1==myStr2);
+
+6) Insert 
+myStr.insert(index,str/char);
+
+7) Frequency 
+int freq=count(myStr.begin(),myStr.end(),char); //char(optional)
+
+8) Reverse 
+reverse(s.begin(),s.end());
+
+String Rotation
+Right Rotation
+hello ->rotation by 1 -> ohell
+string rr_S=S.substr(index,length)
+
+N=length of String
+k=Rotation value
+string rr_S=S.substr(N-K,k)+S.substr(0,N-K); //before this take modulo
+
+Left Rotation
+string lr_S=S.substr(k,N-k)+S.substr(0,K);
+
+
+Classification Methods
+
+isalpha(ch)
+isdigit(ch)

@@ -18,7 +18,7 @@ vec1.push_back(60);
 
 4) Accessing Elements
 
-data_type element_name=vector_name()
+data_type element_name=vector_name[index];
 
 
 5) Swapping Elements
