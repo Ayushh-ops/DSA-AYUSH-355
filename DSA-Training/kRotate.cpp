@@ -27,6 +27,4 @@ int main(){
             S1=p.substr(k,x-k)+p.substr(0,k);
         }
         cout<<S1<<endl;
-       
-    
 }
