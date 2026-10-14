@@ -1,0 +1,56 @@
+1) Declaration+Allocation
+
+Unordered Set(hash-based, no sorting)
+1)unordered_set<int>mySet1;
+2)unordered_set<int>mySet2={1,2,3};
+
+Ordered Set(BST-based,sorted)
+1)set<int>mySet1;
+2)set<int>mySet2={1,2,3};
+
+2)Adding an element
+1)s.insert(element);
+
+3) Adding all elements
+1)mySet1.insert(mySet2.begin(),mySet2.end());
+
+4) Remove an element 
+1)mySet.erase(element);
+
+5)Getting the size 
+1)mySet.size();
+
+6)Two sets are equal or not
+1)mySet1==myset2;
+
+7) Checking Existence
+1)set1.find(element)!=set1.end(); ->bool 
+2)set.count(element); ->1/0 size_t/int    size_t -> int gadbad kre toh size_t use krna hai int ki jagah  
+
+8) Sum of set
+1)int sum=accumulate(s.begin(),s.end(),0);
+
+9) Max of set 
+1)int max=*max_element(mySet.begin(),mySet.end());
+
+10)Min of set
+1)int min=*min_element(mySet.begin(),mySet.end());
+
+11) Looping set
+1) for(int val:mySet) {cout<<val;}  ->int ki jagah auto use kr skte hai har datatype le leta hai 
+
+12)Union of sets 
+1)set1.insert(set2.begin(),set2.end());
+
+13) Intersection of sets 
+1)unordered_set<int>newSet;
+  for(auto num:Set1){
+    if(Set2.count(num))
+    {newSet.insert(num);}} 
+
+14) Difference of set 
+1)unordered_set<int>diffSet;
+  for(auto num:Set1){
+    if(!Set2.count(num))
+    {diffSet.insert(num);}}    
+    
