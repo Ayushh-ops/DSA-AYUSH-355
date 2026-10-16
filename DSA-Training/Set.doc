@@ -11,10 +11,10 @@ Ordered Set(BST-based,sorted)
 2)Adding an element
 1)s.insert(element);
 
-3) Adding all elements
+3)Adding all elements
 1)mySet1.insert(mySet2.begin(),mySet2.end());
 
-4) Remove an element 
+4)Remove an element 
 1)mySet.erase(element);
 
 5)Getting the size 

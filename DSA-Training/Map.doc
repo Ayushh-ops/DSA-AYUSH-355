@@ -1,0 +1,48 @@
+1) Declaration 
+unordered_map<key_type,value_type>map_name;
+Ex: unordered_map<int,string> myMap1;
+    unordered_map<int,string> myMap2={{1,"One"},{2,"Two"}};
+ 
+    ordered_map
+    map<int,string>myMap1;
+
+2) Adding/Updating an element 
+map1[key]=value;
+
+3) Adding all elements 
+map1.insert(map2.begin(),map2.end());
+
+4) Remove an element 
+map1.erase(key);
+
+5) Getting the size 
+map1.size();
+
+6) map.find()!=map.end();
+7) map.count();
+
+8) Looping in map 
+map<int,int>myMap={{1,10},{2,20},{3,30},{4,40}};
+for(auto pair:myMap){
+    cout<<pair.first<<endl;} ->{1,2,3,4}
+for(auto pair:myMap){
+    cout<<pair.second<<endl;} ->{10,20,30,40}
+
+9) Sorting of a map 
+1) Sort by keys 
+unordered_map<int,string>Map={{10,"AB"},{30,"CD"}};
+Converts into a pair of vector 
+vector<pair<int,string>>vec(Map.begin(),Map.end());
+sort by keys 
+sort(vec.begin(),vec.end(),fun); ->Map={{8,"DE"},{10,"AB"},{30,"AB}}
+
+bool fun(pair<int,string>key1,pair<int,string>key2);
+return {key1.first<key2.first};
+                                -> For descending order {key1.first>key2.first};
+
+2) Sort by values
+for values basis sorting 
+return {key1.second<key2.second}; -> For descending order same as above (>) 
+
+
+
