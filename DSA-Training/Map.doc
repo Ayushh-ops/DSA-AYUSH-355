@@ -7,7 +7,7 @@ Ex: unordered_map<int,string> myMap1;
     map<int,string>myMap1;
 
 2) Adding/Updating an element 
-map1[key]=value;
+map1[key]=value;             map[x]++;
 
 3) Adding all elements 
 map1.insert(map2.begin(),map2.end());
